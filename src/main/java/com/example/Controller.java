@@ -12,7 +12,8 @@ public class Controller {
   public String hello(){
         return "Guten Morgen";
     }
-    @Bean public static Function<String, String> lower() {
+    @Bean
+    public static Function<String, String> lower() {
            return String::toLowerCase;
     }
 }

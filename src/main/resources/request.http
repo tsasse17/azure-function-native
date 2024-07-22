@@ -1,6 +1,6 @@
 
 
-POST https://azure-native-spring-function.azurewebsites.net/api/hello?code=fsyf09pdrFCb8u-Dz2Hrx3caHzJFH1PwFBdNhbyqNd_TAzFuX_r8IA%3D%3D
+POST https://azure-function-native.azurewebsites.net/api/hello?code=YpvGnVLDrfN0yg7Dr5EHlAZCva-rpevTJsYwbf3WZdGnAzFuU2CcVA%3D%3D
 Content-Type: application/json
 
 {
@@ -10,9 +10,9 @@ Content-Type: application/json
 
 
 ####
-GET localhost:8080/
-Content-Type: application/json
+GET localhost:8080/api/
+Content-Type: text/plain
 
 {
-  "message": "test 1234"
+  "ich bin dumm"
 }

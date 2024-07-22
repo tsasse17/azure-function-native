@@ -20,6 +20,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.cloud:spring-cloud-starter-function-web:4.1.3")
 	implementation("org.springframework.cloud:spring-cloud-starter-function-webflux:3.2.2")
 	runtimeOnly("com.h2database:h2")
 	compileOnly("org.projectlombok:lombok")
@@ -44,8 +45,7 @@ tasks.register<Zip>("packageDistribution") {
 
 graalvmNative {
 
-	binaries.all { resources.autodetect()
-	}
+	binaries.all { resources.autodetect()}
 }
 
 tasks.withType<Test>{
