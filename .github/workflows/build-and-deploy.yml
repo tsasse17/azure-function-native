@@ -22,5 +22,5 @@ jobs:
               uses: Azure/functions-action@v1
               with:
                 app-name: azure-native-spring-function
-                package: build/dist/azure-native-spring-function.zip
+                package: build/dist/azure-function-native.zip
                 publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
