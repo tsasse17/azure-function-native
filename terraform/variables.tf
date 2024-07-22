@@ -10,7 +10,7 @@ variable "AZ_RESOURCE_GROUP" {
 
 variable "AZ_FUNCTION_NAME_APP" {
   description = "The name of the application running functions"
-  default = "azure-native-spring-function"
+  default = "azure-function-native"
 }
 
 variable "AZ_STORAGE_NAME" {
